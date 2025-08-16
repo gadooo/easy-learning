@@ -1,0 +1,19 @@
+.nav-bar-container {
+  background-color: #add8e6; /* Light blue */
+  padding: 10px; /* Adjust as needed */
+  border-radius: 8px;
+}
+
+.nav-bar-container:hover {
+  background-color: #87ceeb; /* A slightly darker blue for the hover effect */
+}
+
+.nav-bar-container::before {
+  content: "EASY LEARNING";
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  font-family: sans-serif;
+  color: #333;
+  margin-bottom: 10px;
+}
