@@ -1,19 +1,45 @@
+/* Styling for the main navigation bar container */
 .nav-bar-container {
-  background-color: #add8e6; /* Light blue */
-  padding: 10px; /* Adjust as needed */
-  border-radius: 8px;
+  background-color: #add8e6; /* Light blue background for the entire nav bar */
+  padding: 10px 20px; /* Vertical and horizontal padding for the container */
+  border-radius: 8px; /* Slightly rounded corners */
+  display: flex; /* Use flexbox to align title and nav items */
+  align-items: center; /* Vertically center items */
+  justify-content: space-between; /* Space out title and nav items */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
-.nav-bar-container:hover {
-  background-color: #87ceeb; /* A slightly darker blue for the hover effect */
+/* Styling for the "EASY LEARNING" title */
+.nav-bar-container .nav-title {
+  color: #333; /* Darker text for better contrast */
+  font-family: 'Arial', sans-serif; /* A clear, readable font */
+  font-size: 1.5em; /* Larger font size for the title */
+  font-weight: bold; /* Make the title bold */
+  margin-right: 20px; /* Space between title and nav items */
+  white-space: nowrap; /* Prevent title from wrapping */
 }
 
-.nav-bar-container::before {
-  content: "EASY LEARNING";
-  display: block;
-  text-align: center;
-  font-weight: bold;
-  font-family: sans-serif;
-  color: #333;
-  margin-bottom: 10px;
+/* Styling for the unordered list within the nav bar */
+.nav-bar-container ul {
+  list-style: none; /* Remove default bullet points */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  display: flex; /* Use flexbox to display list items horizontally */
+}
+
+/* Styling for individual navigation bar items (list items) */
+.nav-bar-container ul li.nav-bar-item {
+  padding: 8px 15px; /* Padding inside each nav item */
+  margin-left: 10px; /* Space between nav items */
+  cursor: pointer; /* Indicate that items are clickable */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+  border-radius: 5px; /* Slightly rounded corners for items */
+  color: #333; /* Default text color for items */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* A modern font */
+}
+
+/* Hover effect for navigation bar items */
+.nav-bar-container ul li.nav-bar-item:hover {
+  background-color: #87ceeb; /* A slightly darker blue on hover */
+  color: #fff; /* White text on hover for better contrast */
 }
