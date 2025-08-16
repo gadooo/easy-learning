@@ -2,14 +2,14 @@ import "./NavBar.css";
 
 function NavBar() {
   return (
-    <div class="nav-bar-container">
-      <div class="nav-title">EASY LEARNING</div>{" "}
-      <ul class="nav-bar">
+    <div className="nav-bar-container">
+      <div className="nav-title">EASY LEARNING</div>{" "}
+      <ul className="nav-bar">
         {" "}
-        <li class="nav-bar-item">Home</li>
-        <li class="nav-bar-item">About</li>
-        <li class="nav-bar-item">Services</li>
-        <li class="nav-bar-item">Contact</li>
+        <li className="nav-bar-item">Home</li>
+        <li className="nav-bar-item">About</li>
+        <li className="nav-bar-item">Services</li>
+        <li className="nav-bar-item">Contact</li>
       </ul>
     </div>
   );
